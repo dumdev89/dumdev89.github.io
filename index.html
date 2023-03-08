@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+      
+    <!-- normalize para que se vea "igual" en todos los navegadores -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- fuentes de googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <!-- iconos de fontawesome -->
+    <script src="https://kit.fontawesome.com/be1a552502.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/experiences.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- mi archivo de javascript -->
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <!--<div class="observer-root-margin"></div>INTERSECTION OBSERVER-->
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <img height="50" width="50" src="https://randomuser.me/api/portraits/men/52.jpg" alt="foto de usuario">
+                <div>
+                    <p id="user_value"><span id="randomName">Clyde Burke</span></p>
+                </div>
+            </a>
+            <button class="open-menu" aria-label="Abrir Menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="menu">
+                <button class="close-menu" aria-label="Cerrar Menú">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <li><a href="#profile" class="selected">Profile</a></li>
+                <li><a href="#experiences">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="padding-H padding-V">
+        <section class="profile" id="profile">
+            <div class="profile-info">
+                <h1 class="profile-title">Hello! I'm <br><span id="randomName">Clyde Burke</span></h1>
+                <p class="profile-details">
+                    I am a programming student looking for job opportunities. I learn quickly and I am passionate about everything related to technology.
+                </p>
+                <button class="profile-btn">Download CV</button>
+            </div>
+            <div class="profile-data">
+                <div class="data-email">
+                    <div class="email-icon">
+                        <i style="color: var(--primary-color)" class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="email">My email is <span id="randomEmail">clyde.burke@example.com</span></div>
+                </div>
+                <div class="data-birthday">
+                    <div class="birthday-icon">
+                        <i style="color: var(--primary-color)" class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="birthday">My birthdate is <span id="randomBirthday">3/2/1947</span></div>
+                </div>
+                <div class="data-address">
+                    <div class="address-icon">
+                        <i style="color: var(--primary-color)" class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div class="address">My address is <span id="randomAddress"></span>9685 Mcclellan Rd</div>
+                </div>
+                <div class="data-phone">
+                    <div class="phone-icon">
+                        <i style="color: var(--primary-color)" class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="phone">My phone number is <span id="randomPhone">(932) 223-2562</span></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="experiences" id="experiences">
+        <img src="img\wave.svg" alt="division" class="wave">
+        <div class="experiences-body">
+            <h2 class="experiences-title">Experience</h2>
+            <div class="experiences-grid">
+                <div class="empty"></div>
+                <div class="line"></div>
+                <div class="experience">
+                    <div class="experience-date">2016-2020</div>
+                    <div class="experience-company">Company 1</div>
+                    <div class="experience-position">Position 1</div>
+                    <div class="experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut vehicula ex. Fusce turpis orci, gravida sit amet ullamcorper ut, ullamcorper non lectus. Proin a lacus dictum, tristique nisi et, eleifend ligula. Donec lacus urna, ornare vitae tortor ut, congue commodo eros. Duis blandit non lorem ut maximus.</div>
+                </div>
+                <div class="experience experience-inverted">
+                    <div class="experience-date">2020-2020</div>
+                    <div class="experience-company">Company 2</div>
+                    <div class="experience-position">Position 2</div>
+                    <div class="experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut vehicula ex. Fusce turpis orci, gravida sit amet ullamcorper ut, ullamcorper non lectus. Proin a lacus dictum, tristique nisi et, eleifend ligula. Donec lacus urna, ornare vitae tortor ut, congue commodo eros. Duis blandit non lorem ut maximus.</div>
+                </div>
+                <div class="line"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="line"></div>
+                <div class="experience">
+                    <div class="experience-date">2021-2023</div>
+                    <div class="experience-company">Company 3</div>
+                    <div class="experience-position">Position 3</div>
+                    <div class="experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut vehicula ex. Fusce turpis orci, gravida sit amet ullamcorper ut, ullamcorper non lectus. Proin a lacus dictum, tristique nisi et, eleifend ligula. Donec lacus urna, ornare vitae tortor ut, congue commodo eros. Duis blandit non lorem ut maximus.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="padding-H padding-V">
+        <section class="skills" id="skills">
+            <h2 class="skills-title">Skills<h2>
+            <ul class="skills-list">
+                <li class="skills-skill">HTML</li>
+                <li class="skills-skill">CSS</li>
+                <li class="skills-skill">Javascript</li>
+                <li class="skills-skill">VBA</li>
+                <li class="skills-skill">Excel</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="padding-H padding-V">
+        <section class="contact" id="contact">
+            <nav class="social">
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <i style="color: white" class="fa-brands fa-square-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/">
+                            <i style="color: white" class="fa-brands fa-square-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/">
+                            <i style="color: white" class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com">
+                            <i style="color: white" class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/">
+                            <i style="color: white" class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="contact-details-group">
+                <p class="contact-msg">Wanna contact me? Send me an e-mail!</p>
+                <p class="contact-email"><span id="randomEmail">clyde.burke@example.com</span></p>
+                <form class="contact-form">
+                    <div class="contact-form-group">
+                        <label for="name">Name</label>
+                        <input required type="text" name="name" id="name">
+                        <label for="email">E-mail</label>
+                        <input required type="email" name="email" id="email">
+                        <label for="msg">Message</label>
+                        <textarea name="msg" id="msg" cols="30" rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="contact-form-submit">Send</button>
+                </form>
+            </div>
+            
+        </section>
+    </div>
+
+<!-- tip: "lorem5000" para escrbir 5000 palabras -->
+</body>
+</html>

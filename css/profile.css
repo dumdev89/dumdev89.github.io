@@ -1,0 +1,124 @@
+/*empezamos diseñando la parte móvil primero*/
+
+
+/*fuente de la api de google para el titulo de esta seccion*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap');
+
+.profile {
+    text-align: center;
+}
+
+.profile-info {
+    margin-bottom: 30px;
+}
+
+.profile-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--primary-color);
+    font-family: 'Raleway', sans-serif;
+}
+
+.profile-details {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;    /*espaciado entre renglones*/
+    max-width: 450px;
+    margin: 20px auto;    /*arriba y abajo | izq y der*/
+}
+
+.profile-btn {
+    background-color: var(--navbar-shallow-color);
+    color: var(--text-color-inverse);
+    border: none;
+    font-size: 20px;
+    padding: 0.5em 1em;   /*son medidas intelig, cambian con el font-size*/
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.profile-btn:hover {
+    filter: brightness(150%);
+}
+
+.profile-data {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+    /*tamaño de los iconos*/
+    .email-icon {
+        font-size: 30px;
+        padding: 0 0.25em;
+    }
+    .birthday-icon {
+        font-size: 30px;
+        padding: 0 0.25em;
+    }
+    .address-icon {
+        font-size: 30px;
+        padding: 0 0.25em;
+    }
+    .phone-icon {
+        font-size: 30px;
+        padding: 0 0.25em;
+    }
+
+/*media query para dispositivos grandes ------------------------------*/
+@media (min-width: 950px) {
+    .profile {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+    .profile-info {
+        margin-bottom: 0px;
+    }
+    
+    .profile-title {
+        font-size: 45px;
+    }
+    
+    .profile-details {
+        font-size: 24px;
+        margin: 30px 0;
+    }
+    
+    .profile-btn {
+        font-size: 25px;
+    }
+    
+    .profile-data {
+        text-align: left;
+        line-height: 2;
+        max-width: 850px;
+        margin: 20px 20px;
+    }
+
+    /*alinear horizontalmente*/
+    .data-email {
+        display: flex;
+        align-items: center;
+    }
+    .data-birthday {
+        display: flex;
+        align-items: center;
+    }
+    .data-address {
+        display: flex;
+        align-items: center;
+    }
+    .data-phone {
+        display: flex;
+        align-items: center;
+    }
+}

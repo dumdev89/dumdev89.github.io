@@ -1,0 +1,119 @@
+.experiences {
+    display: flex;
+    flex-direction: column;   /*muestra wave/textos/wave verticalmente*/
+    width: 100%;
+}
+
+.experiences-body {
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+}
+
+.experience {
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.wave {
+    width: 100%;
+    top: 2px;    /*desplazamiento para ocultar la separacion blanca*/
+}
+
+.wave-bottom {
+    width: 100%;
+    transform: scale(-1);   /*invierto la imagen inferior*/
+    top: -2px;   /*desplazamiento para ocultar la separacion blanca*/
+    position: inherit;
+}
+
+.experiences-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 25px;
+}
+
+.experience-date {
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+
+.experience-company {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 0.5em;
+}
+
+.experience-position {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0.5em;
+}
+
+.experience-description {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 0.25em;
+}
+
+/* media query para disp grandes ----------------------*/
+@media (min-width: 950px) {
+    .experiences-title {
+        font-size: 50px;
+        margin: 35px;
+    }
+    
+    .experience-date {
+        font-size: 40px;
+    }
+    
+    .experience-company {
+        font-size: 25px;
+    }
+    
+    .experience-position {
+        font-size: 22px;
+        margin-top: 1em;
+    }
+    
+    .experience-description {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .experience-inverted {
+        text-align: right;
+    }
+
+    .experiences-grid {
+        display: grid;   /*armo una grilla*/
+        grid-template-columns: auto 2px auto;   /*armo 3 columnas de divs*/
+        justify-content: center;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    .line {
+        background-color: var(--secondary-color);
+    }
+
+    /*pseudoelementos antes y despues de los divs*/
+    /*un pseudoelemento siempre debe tener content para mostrar algo*/
+    /*en este caso con display y br creo un circulo*/
+    /*.line::before,
+    .line::after {
+        content: "";
+        display: block;
+        height: 20px;
+        width: 20px;
+        background-color: var(--secondary-color);
+        border-radius: 50%;
+        position: absolute;
+        top: -20px;
+        left: -5px;
+    }*/
+}

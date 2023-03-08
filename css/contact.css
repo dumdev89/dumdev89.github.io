@@ -1,0 +1,77 @@
+.contact {
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+    font-size: 18px;
+    border-radius: 14px;
+    padding: 50px;
+    text-align: center;
+    display: grid;
+    gap: 25px;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.contact p,
+.contact ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-details-group,
+.contact-form-group {
+    display: grid;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 450px;
+    margin: 20px auto;    /*arriba y abajo | izq y der*/
+}
+
+.contact-form input,
+.contact-form textarea {
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    padding: 0.25em 0.5em;
+    margin: 10px 10px;
+}
+
+.contact-form textarea {
+    height: 200px;
+    resize: none;
+}
+
+.contact-form-submit{
+    background-color: var(--navbar-shallow-color);
+    color: var(--text-color-inverse);
+    border: none;
+    font-size: 25px;
+    padding: 0.5em 1em;   /*son medidas intelig, cambian con el font-size*/
+    border-radius: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-form-submit:hover {
+    filter: brightness(150%);
+}
+
+.social {
+    padding: 20px;
+    top: 100px;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+.social-list img:hover {
+    filter: drop-shadow(0 0 14px var(--navbar-shallow-color));
+}
